@@ -13,7 +13,7 @@ services:
       - $PWD:/workspace
     command: '/bin/bash'
     ports:
-      - 16181-161190:16181-16190
+      - 16181-16190:16181-16190
     deploy:
       resources:
         reservations:
