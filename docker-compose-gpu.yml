@@ -9,13 +9,11 @@ services:
     image: ml-adac-image
     shm_size: '24gb'
     tty: true
-    env_file:
-      - .env
     volumes: 
       - $PWD:/workspace
     command: '/bin/bash'
     ports:
-      - 18181-181190:18181-18190
+      - 16181-161190:16181-16190
     deploy:
       resources:
         reservations:
